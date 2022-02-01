@@ -1,0 +1,88 @@
+\documentclass[13pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage[czech]{babel}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{multicol}
+\geometry{legalpaper, margin=1.05in}
+\pagestyle{fancy}
+\lhead{\Large Discussion based assessment}
+\rhead{\large Matěj Červenka 16.10.2021}
+\begin{document}
+\begin{enumerate}
+    \large \onehalfspacing
+    \item
+    \[
+        f(x)=
+        \begin{dcases}
+            4x-7 & x \leq 2 \\
+            e^{x-2} & x > 2
+        \end{dcases}
+    \]
+    To prove that the function $f$ is continous at $x=2$ we have
+    to look at $\lim_{x\to 2}f(x)$.
+    \begin{align*}
+        \text{Left-handed limit: }&\lim_{x\to 2^-}f(x) = \lim_{x\to 2}4x-2 = 1\\
+        \text{Right handed limit: }&\lim_{x\to 2^+}f(x) = \lim_{x\to 2^+}e^{x-2}  = 1\\
+        \text{Therefore: } &\lim_{x\to 2}f(x)=1
+    \end{align*}
+    In next step of solving this problem we have to show that
+    $f(2)$ exists which it does because $f(2)=4\cdot 2 - 7=1$.
+    \\The last requirement to prove that $f$ is continous at $x=2$ is
+    that $f(2)=\lim_{x\to 2}f(x)$ which it does $\to$ $f(2)=\lim_{x\to 2}f(x)=1$.
+    
+    \item According to the graph $\Rightarrow$
+    \begin{align*}
+        \text{Part A: } &\lim_{x\to 4^-}f(x) = 5\\
+        \text{Part B: } &\lim_{x\to 4^+}f(x) = 2\\
+        \text{Part C: } &\lim_{x\to 2}f(x) = 6
+    \end{align*}
+
+    \item Let's (not) find those limits $\Rightarrow$\\
+    \textbf{Part A}: We will use our knowledge of simple trigonometric limits
+    therefore we know that $\lim_{x\to 0}\frac{sin(nx)}{nx}=1$.
+    \begin{align*}
+        \lim_{x\to 0} \frac{sin(2x)}{3x} =
+         \lim_{x\to 0}\frac{\frac{2}{3}}{\frac{2}{3}} \cdot
+         \frac{sin(2x)}{3x} = \frac{2}{3}\cdot \lim_{x\to0}\frac{sin(2x)}{2x}
+         =\frac{2}{3} \cdot 1 = \frac{2}{3}
+    \end{align*}
+    \textbf{Part B}: We have to rationalize and simplify the expression
+    to find the limit.
+    \begin{align*}
+        \lim_{x\to 4}\frac{\sqrt{x-3}-1}{x-4}\cdot
+        \frac{\sqrt{x-3}+1}{\sqrt{x-3}+1} =
+        \lim_{x\to 4} \frac{x-4}{(x-4)(\sqrt{x-3}+1)} = 
+        \lim_{x\to4} \frac{1}{\sqrt{x-3}+1} = \frac{1}{2}
+    \end{align*}
+    \item Using limit theorems we know that $\Rightarrow$
+    \begin{align*}
+        &\lim_{x\to 2}[f(x)\cdot g(x)] = \lim_{x\to 2}f(x) \cdot
+        \lim_{x\to 2}g(x) \Rightarrow \text{Now we just need to find the values in the graphs}\\
+        &\lim_{x\to 2} f(x) = DNE \wedge  \lim_{x\to 2}g(x) = DNE \Rightarrow DNE\cdot DNE = DNE \: \:
+        (\text{DNE times DNE is still DNE :)})
+    \end{align*}
+    \item We consider this piecewise function $h(x)$.
+    \[
+    h(x)=
+    \begin{dcases}
+        \frac{x-3}{x^2-9}& x\neq -3; 3\\
+        k & x=3
+    \end{dcases}    
+    \]
+    If we want to make $h(x)$ continuous at $(-3, \infty)$ by finding $k$ we have to look
+    at the limit as x approaches 3 of $\frac{x-3}{x^2-9}$.
+    \begin{align*}
+        \lim_{x\to 3}\frac{x-3}{x^2-9} = \lim_{x\to 3} 
+        \frac{x-3}{(x-3)(x+3)} = \lim_{x\to3} \frac{1}{x+3}= \frac{1}{6}  
+    \end{align*}
+    To prevent a removable discontinuity at $x=3$, then
+    $h(3) = \lim_{x\to3}f(x) = k = \frac{1}{6}$ $\Rightarrow$
+    $k$ must be equal to $\frac{1}{6}$.
+\end{enumerate}
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[13pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage[czech]{babel}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{graphicx}
+\geometry{legalpaper, margin=1.05in}
+\pagestyle{fancy}
+\lhead{\Large Discussion based assessment}
+\rhead{\large Matěj Červenka 31.1.2021}
+\begin{document}
+\begin{enumerate}
+\large \onehalfspacing
+\item According to MVT $f'(c)$ must equals to the slope of the secant line that
+connects $f(0)$ and $f(3)$, so that $c \in (0, 3)$.
+First we have to find what is the average rate of the function over the given interval.
+    \begin{align*}
+        m_{avg} = \frac{f(3)-f(0)}{3-0} = \frac{0}{3} = 0
+    \end{align*}
+Now we need to find $f'(x)$.
+    \begin{align*}
+        f'(x) = 3x^2 - 6x
+    \end{align*}
+Solve for $f'(c)=0$.
+    \begin{align*}
+        3c^2 - 6c &= 0 /:c \:(\text{x=0 is not on our interval})\\
+        c = 2
+    \end{align*}
+\item It tells us that the function f has absolute maximum and minimum on $<-2,2>$
+
+\item  We must find $f'(x)$ and then solver for $f'(x)=0$. Those points where the 
+derivative is 0 are points where the function \emph{usually} changes from decreasing
+to increasing and vice versa.
+\begin{align*}
+    f'(x) = 8(2x+1)^3\\
+    0 = 8(2x+1)^3 \Rightarrow x=-0.5
+\end{align*}
+Now the domain of $f$ was split into $x<-0.5$ and $x>-0.5$. Now we take number
+from each interval and plug it in $f'(x)$ to see whether it is positive or negative.
+
+$x<-0.5 \to f'(x)>0 (increasing)$
+
+$x>-0.5 \to f'(x)>0 (increasing)$\\
+The function is increasing on its domain (all real numbers).
+\item The global minimum of this quadratic function on $<-4,2>$ will be there
+where $f'(x)=0$ and $f''(x)>0$.
+\begin{align*}
+    f'(x)=2x + 2 \Rightarrow x=-1
+\end{align*}
+We don't need to find the second derivative because the quadratic polynomial member
+is positive. We know for sure that the mimimum will be at $x=-1$. We just need
+to solve for $f(-1)$.
+\begin{align*}
+    f(-1) = -6
+\end{align*}
+The global minimum is $-6$.
+\item To determine the concavity of graph of the function $f$ we need to be looking at
+at $f''$. The second derivative of $f''(x)=e^x$. We know that exponential functions are
+always larger than zero $f''(x)>0$. The function $f$ will be concave up on the given interval.
+
+\item The function has an inflex point at $x=0$ because $f''(0)=0$. And the graph is
+concave down at $x=-1$ and concave up at $x=1$. If $x=0$ is the only point of inflection
+of the function $f$ then the graph of the function $f$ is concave down on $(-\infty,0)$ and concave up 
+on  $(0, \infty)$.
+
+The graph of the function $f$ has one inflection point at $x=3$. The function is 
+concave up on $(-6,3)$ and concave down on $(3, 4)$. $f(-3)$ is relative minimum because $f''(-3)>0$.
+
+\item 
+
+\end{enumerate}
+\end{document}

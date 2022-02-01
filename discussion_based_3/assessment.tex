@@ -1,0 +1,78 @@
+\documentclass[13pt, a4paper, twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage[czech]{babel}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{multicol}
+\geometry{legalpaper, margin=1.05in}
+\pagestyle{fancy}
+\lhead{\Large Discussion based assessment}
+\rhead{\large Matěj Červenka 24.11.2021}
+\begin{document}
+\large \onehalfspacing
+\begin{enumerate}
+    \item We'll use the chain rule to find the derivatives \\ 
+    \textbf{A)} $h'(x) = f'(g(x)) \cdot g'(x)$\\
+    \textbf{B)} $h'(x) = 3(f(g(x)))^2 \cdot f'(g(x)) \cdot g'(x)$\\
+    \textbf{C)} $h'(x)=f'(g(5x)^4) \cdot 4g(5x)^3 \cdot g'(5x) \cdot 5$\\
+    \textbf{D)} $h'(x)=f'(arcsin(6x))\cdot \frac{6}{\sqrt{1-36x^2}}$
+
+    \item \textbf{A)} To find $\frac{dy}{dx}$ we need to use the implicit
+    differentitation.\\
+    \begin{align*}
+        &\frac{d}{dx}(x^3+y^3-2xy)= \frac{d}{dx}(2)\\
+        &3x^2 + 3y^2\frac{dy}{dx} -2y - 2x\frac{dy}{dx} = 0\\
+        &\frac{dy}{dx} =\frac{2y-3x^2}{3y^2-2x}
+    \end{align*}
+    \textbf{B)} Now we just need to find the slope at (-1, 1) and substitute
+    into the point-slope formula.\\
+    \begin{align*}
+        &\frac{dy|_{y=1}}{dx|_{x=-1}}=\frac{2-3}{3+2} = -\frac{1}{5}\\
+        &\text{Tangent line} \Rightarrow y-1 = -\frac{1}{5}(x+1)
+    \end{align*}
+    \item \textbf{A)} To find f'(x) we'll once again use the chain rule
+    and inverse trigonometric differentitation.
+    \begin{align*}
+        &f'(x) = -\frac{sin(arcsin(x))}{\sqrt{1-x^2}} = -\frac{x}{\sqrt{1-x^2}}\\
+        &\text{sin(arcsin(x)) becomes x because if we put the inverse function of x into the function we get x}
+    \end{align*}
+    \text{B)} Now we'll find the slope at x=0.5 and substitute into the point-slope formula.
+    (And also find f(0.5) which is $\sqrt{3}/2$)
+    \begin{align*}
+        &m = f'(\frac{1}{2}) = -\frac{\frac{1}{2}}{\sqrt{\frac{3}{4}}} = -\frac{1}{\sqrt{3}}\\
+        &\text{Tangent line} \Rightarrow y-\frac{\sqrt{3}}{2} = -\frac{1}{\sqrt{3}}(x-\frac{1}{2})
+    \end{align*}
+    \item \textbf{A)} To find $\frac{dy}{dx}$ we'll just simply use the implicit differentitation.\\
+    \begin{align*}
+       &\frac{d}{dx}(x^2+y^2-4x -2y + 1 = 0)\\
+       &2x + 2y\frac{dy}{dx} - 4 -2\frac{dy}{dx} = 0\\
+       &\frac{dy}{dx} = \frac{2-x}{y-1}
+    \end{align*}
+    \textbf{B)} To find the coodrinates of those points on the curve where
+    the tangent line is vertical we just need to find places where the derivative
+    doesn't exist (the function is not differentiable) therefore we need to find the "limit" of the derivative so that
+    it will be equal to $\pm \infty$.
+    \begin{align*}
+        lim_{x\to a} (\frac{2-x}{y-1}) = \pm \infty \\
+    \end{align*}
+    We can see that the derivative doesn't exist at y=1. If we substitute
+    y=1 into the curve formula we find two solutions $\Rightarrow$ (0, 1) and (4, 1)
+
+    \item \textbf{A)} In this part we'll once again use the implicit differentitation.
+    \begin{align*}
+        k'(x) = f'(g(x))\cdot g'(x)\\
+        k'(-1) = f'(1) \cdot 1 = -3
+    \end{align*}
+    \textbf{B)} With solving the B part will help us the inverse derivave rules and then we'll hust substitute the slope to the point-slope formula.
+    \begin{align*}
+        &j'(1) = \frac{1}{f'(j(1))} = \frac{1}{2}\\
+        &\text{Now we'll substitute into the point-slope formula at the point (1, -2)}\\
+        &\Rightarrow y+2 = \frac{1}{2}(x-1)
+    \end{align*}
+\end{enumerate}
+\end{document}
