@@ -13,66 +13,85 @@
 \geometry{legalpaper, margin=1.05in}
 \pagestyle{fancy}
 \lhead{\Large Discussion based assessment}
-\rhead{\large Matěj Červenka 31.1.2021}
+\rhead{\large Matěj Červenka 1.2.2022}
 \begin{document}
 \begin{enumerate}
 \large \onehalfspacing
-\item According to MVT $f'(c)$ must equals to the slope of the secant line that
-connects $f(0)$ and $f(3)$, so that $c \in (0, 3)$.
-First we have to find what is the average rate of the function over the given interval.
-    \begin{align*}
-        m_{avg} = \frac{f(3)-f(0)}{3-0} = \frac{0}{3} = 0
-    \end{align*}
-Now we need to find $f'(x)$.
-    \begin{align*}
-        f'(x) = 3x^2 - 6x
-    \end{align*}
-Solve for $f'(c)=0$.
-    \begin{align*}
-        3c^2 - 6c &= 0 /:c \:(\text{x=0 is not on our interval})\\
-        c = 2
-    \end{align*}
-\item It tells us that the function f has absolute maximum and minimum on $<-2,2>$
+\item \textbf{A.} The points of inflection are at $x=2, x=4, x=6$ because the tangent
+slope of the tangent lines at these points are 0 $\to$ $f''(x)=0$. That means
+that the graph of $f$ changes its concavity at these points.
 
-\item  We must find $f'(x)$ and then solver for $f'(x)=0$. Those points where the 
-derivative is 0 are points where the function \emph{usually} changes from decreasing
-to increasing and vice versa.
+
+\textbf{B.} The function $f$ has has relative maximum at $x=7$ because there
+is a critical point $f'(7)=0$ and $f''(7)<0$.
+
+
+\textbf{C.} The graph is concave up on $0<x<2$ and $4<x<6$ because $f''(x)>0$
+for those intervals.
+
+\item \textbf{A.} To identify the relative extrema of $g$ we need to find the critical
+points. We know that $f'(x)=0 or DNE$ at those points.
+
 \begin{align*}
-    f'(x) = 8(2x+1)^3\\
-    0 = 8(2x+1)^3 \Rightarrow x=-0.5
+	f'(x) = 3x^2 - 12\\
+	\text{Now we need to set it equal to zero} \\
+	x = \pm 2 
 \end{align*}
-Now the domain of $f$ was split into $x<-0.5$ and $x>-0.5$. Now we take number
-from each interval and plug it in $f'(x)$ to see whether it is positive or negative.
 
-$x<-0.5 \to f'(x)>0 (increasing)$
+We know that the critical point of $g$ is at $x=\pm 2$. Now we need to look
+at the function $g''$ to determine wether it is maximum, minimum or neither of those.
 
-$x>-0.5 \to f'(x)>0 (increasing)$\\
-The function is increasing on its domain (all real numbers).
-\item The global minimum of this quadratic function on $<-4,2>$ will be there
-where $f'(x)=0$ and $f''(x)>0$.
 \begin{align*}
-    f'(x)=2x + 2 \Rightarrow x=-1
+	g''(x) = 6x
 \end{align*}
-We don't need to find the second derivative because the quadratic polynomial member
-is positive. We know for sure that the mimimum will be at $x=-1$. We just need
-to solve for $f(-1)$.
+
+If we plug the x-coordinates of the critical points into the second derivative
+we'll know that $g''(-2)<0$ and $g''(2)>0$. We now know that there's maximum
+at $x=-2$ where $g(-2)=16$ and there's a minimum at $x=2$ where $g(2)=-16$. 
+
+
+\textbf{B.} To determine the concavity of the function we need to find
+the inflection points ($g''(x)=0$) which will split the function into concave
+up and concave down areas.
+
 \begin{align*}
-    f(-1) = -6
+	0 &= 6x \\
+	x &=0
 \end{align*}
-The global minimum is $-6$.
-\item To determine the concavity of graph of the function $f$ we need to be looking at
-at $f''$. The second derivative of $f''(x)=e^x$. We know that exponential functions are
-always larger than zero $f''(x)>0$. The function $f$ will be concave up on the given interval.
 
-\item The function has an inflex point at $x=0$ because $f''(0)=0$. And the graph is
-concave down at $x=-1$ and concave up at $x=1$. If $x=0$ is the only point of inflection
-of the function $f$ then the graph of the function $f$ is concave down on $(-\infty,0)$ and concave up 
-on  $(0, \infty)$.
+The point of inflection of $g$ is at $x=0$. From the previous part we know
+that for $x<0$ $g''(x)<0$ and for $x>0$ $g''(x)>0$. The function is 
+concave down for $x<0$ and concave up for $x>0$.
 
-The graph of the function $f$ has one inflection point at $x=3$. The function is 
-concave up on $(-6,3)$ and concave down on $(3, 4)$. $f(-3)$ is relative minimum because $f''(-3)>0$.
+\item \textbf{A.} To find the relative we need to find critical points
+of graph of the function $f$ where there's also a sign change in $f'(x)$.
+There's only one extrema on this interval at $x=4$ because $f''(4)=0$ and
+for $x<4$ $f'(x)<0$ and for $x>4$ $f'(x)>0$, this also means that there's 
+a relative minumum at $x=4 \to f(4)=-4$
 
-\item 
+
+\textbf{B.} To find whether the statement is true we'll need to apply the 
+MVT for the function $f'(x)$. That means that the slope of the secant line 
+between points $(2, f'(2))$ $(4, f(4))$ is zero.
+
+\begin{align*}
+	m = \frac{f'(4)-f'(2)}{4-2} = \frac{0}{2} = 0
+\end{align*}
+
+This means that there has to be at least on point on $f'$ on $(2, 4)$ where
+$f''(c)=0$.
+
+
+
 
 \end{enumerate}
 \end{document}
+
+
+
+
+
+
+
+
+
