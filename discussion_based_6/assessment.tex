@@ -13,10 +13,76 @@
 \geometry{legalpaper, margin=1.05in}
 \pagestyle{fancy}
 \lhead{\Large Discussion based assessment}
-\rhead{\large Matěj Červenka 1.2.2022}
+\rhead{\large Matěj Červenka 2.3.2022}
 \begin{document}
 \begin{enumerate}
 \large \onehalfspacing
+
+\item \textbf{A} To find the left Riemann sum we'll start evaluating the
+rectangles at the left-endpoints whuch are 0, 3, 4, 5 and 8.
+\begin{align*}
+    \int^{10}_0 C(t) dt = C(0)\cdot 3 + C(3) \cdot 1 + C(4)\cdot 1 + C(5) \cdot 3 + C(8) \cdot 2 = 510\: \text{thousands of units}
+\end{align*}
+
+\textbf{B} Because the function C(t) is decreasing over the interval
+then the left Riemann sum is an overestimate.
+
+\item \textbf{A} On the interval [2, -5] there's one half of the semi circle
+and a line segment.
+\begin{align*}
+    \int_{-5}^2 f(x) dx = -\frac{9\pi}{4} - 12 -  \frac{2\cdot 1}{2} + \frac{2\cdot 1}{2} = -12 - \frac{9}{4}\pi
+\end{align*}
+
+\textbf{B} We'll use the simple integration rules to solve this one 
+\begin{align*}
+    \int_0^6 [g(x)+2]dx = \int^6_{-5} g(x)dx - \int^0_{-5}g(x)dx + \int_0^6 2dx = 32
+\end{align*}
+
+\textbf{C} We'll solve this similarily as the two previous problems.
+\begin{align*}
+    \int_0^6 [3g(x) - f(x)]dx = 3\int_0^6 g(x)dx - \int_0^6 f(x)dx = 60 - 17 - 4\pi = 43 - 4\pi
+\end{align*}
+
+\item \textbf{A}
+\begin{align*}
+    &\int tan^3(x)sec^2(x)dx \: \: \text{let } u = tan(x) \Rightarrow dx = \frac{du}{sec^2(x)}\\
+    &\int u^3 du = \frac{u^4}{4}+C =  \frac{tan^4(x)}{4}+C
+\end{align*}
+
+\textbf{B}
+\begin{align*}
+    &\int e^{cos(x)}sin(x) dx \: \: \text{let } u=cos(x) \Rightarrow dx = -\frac{du}{sin(x)}\\
+    & -\int e^udu = -e^u + C = -e^{cos(x)} + C
+\end{align*}
+
+\textbf{C}
+\begin{align*}
+    &\int \frac{x}{\sqrt{1-16x^2}}dx \: \: \text{let } u = 1-16x^2 \Rightarrow dx = -\frac{du}{32x}\\
+    &-\frac{1}{32}\int \frac{1}{\sqrt{u}}du = -\frac{1}{16} \sqrt{u} + C = -\frac{1}{16} \sqrt{1-16x^2} +C 
+\end{align*}
+
+\item \textbf{A} There are two possible ways of writing this Riemann sum as an definite integral.
+\begin{align*}
+    &1. \int_0^4 \sqrt{2 + x}dx \\
+    &2. \int_2^6 \sqrt{x}dx
+\end{align*}
+
+\textbf{B} The integrals above will give the same value so it doesn't not matter
+which one we will evaluate.
+\begin{align*}
+    \int_0^6 \sqrt{x} dx =  [\frac{2}{3}x^{3/2}]_0^6 = 4\sqrt{6} - \frac{4\sqrt{2}}{3}
+\end{align*}
+
+\item We'll solve this by following the integration rules.
+\begin{align*}
+    \int^{\pi/2}_0 sec^2(x/k)dx &= k\\
+    k[tan(x/k)]^{\pi/2}_0 &= k \\
+    [tan(x/k)]^{\pi/2}_0 &= 1 \\
+    tan(\frac{\pi/2}{k}) - tan(\frac{0}{k}) &= 1\\
+    tan(\frac{\pi/2}{k}) &= 1 \\
+    \frac{\pi/2}{k} &= \pi/4 + n\pi \text{ where } n\in Z\\
+    k &= 2
+\end{align*}
 
 
 \end{enumerate}
